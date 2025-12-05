@@ -26,7 +26,8 @@ app.use(cors({
 
 app.use(cookieParser());
 app.use(express.json());
-app.use("/uploads/profiles", express.static("uploads/profiles")); //for static files like images
+ app.use("/uploads/profiles", express.static("uploads/profiles")); //for static files like images
+
 
  app.use("/api/auth", authRoutes);
  app.use("/api/contacts", contactsRoutes);
